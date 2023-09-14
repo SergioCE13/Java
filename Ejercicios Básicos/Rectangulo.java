@@ -1,24 +1,54 @@
-/*
-* Planteamiento del ejercicio: Escribe un programa que calcule el radio
-* de la circunferencia inscrita en un triángulo rectángulo.
-* */
-
-import java.util.Scanner;
-
 public class Rectangulo {
-    public static void main(String[] args) {
-        double a,b,c, radio;
-        Scanner leer = new Scanner(System.in);
 
-        System.out.println("---Calcular el radio de una circunferencia inscrita en un triangulo rectangulo---");
-        System.out.println("Ingrese la longitud del cateto adyacente: ");
-        a = leer.nextDouble();
-        System.out.println("Ingrese la longitud del cateto opuesto:");
-        b = leer.nextDouble();
-        System.out.println("Ingrese la longitud de la hipotenusa:");
-        c = leer.nextDouble();
+    private Coordenada superiorIzq, inferiorDer;
 
-        radio = (a+b-c)/2;
-        System.out.println("El tamaño del radio es de: " + radio);
+    
+
+    public Rectangulo(){
+
+        superiorIzq = new Coordenada(0,0);
+
+        inferiorDer = new Coordenada(0,0);
+
     }
+
+    
+
+    public Rectangulo(double xSupIzq, double ySupIzq, double xInfDer, double yInfDer){
+
+        superiorIzq = new Coordenada(xSupIzq, ySupIzq);
+
+        inferiorDer = new Coordenada(xInfDer, yInfDer);        
+
+    }
+
+    public Rectangulo(Coordenada c1, Coordenada c2){
+        superiorIzq = c1;
+        inferiorDer = c2;
+    }
+
+    
+
+    //Metodo getter de la coordenada superior izquierda
+
+    public Coordenada superiorIzquierda( ) { return superiorIzq; }
+
+ 
+
+    //Metodo getter de la coordenada inferior derecha
+
+    public Coordenada inferiorDerecha( ) { return inferiorDer; }
+
+    
+
+    //Sobreescritura del método de la superclase objeto para imprimir con System.out.println( )
+
+    @Override
+
+    public String toString( ) {
+
+        return "Esquina superior izquierda: " + superiorIzq + "\tEsquina superior derecha:" + inferiorDer + "\n";
+
+    }
+
 }
