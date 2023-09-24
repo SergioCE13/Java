@@ -1,0 +1,90 @@
+Clase: Es una plantilla o modelo que ayuda a definir la estructura y comportamiento de los objetos de la programación orientada a objetos:
+	Tipos de clase:
+		SuperClase: Son las clases de mayor jerarquía de herencia. Sirven como plantillas para otras clases 			y pueden contener atributos y métodos comunes que se comparten entre las clases derivadas 			de esta.
+		SubClase: Estas clases heredan atributos y métodos de una clase base o superclase. Pueden agregar 			atributos adicionales o sobrescribir los métodos heredados para personalizar el 				comportamiento.  
+		Anónima: No tienen un nombre explícito y se rea en el lugar donde se necesita, generalmente como 			una implementacion de una interfaz o una clase abstracta.
+		Abstracta: Son clases de las cuales no se pueden crear objetos, generalmente se utilizan como 				superclases. Pueden contener métodos abstractos que deben ser implementados por las clases 			derivadas.
+		Anidadas: Son clases dentro de otras clases. Pueden ser estáticas o no estáticas y se utilizan para 			encapsular lógica relacionada.
+
+Objeto: Es una instancia en concreto de una clase, representa una entidad del mundo real o abstracto y contiene datos (atributos) y comportamiento (métodos).
+
+Métodos: Son funciones o procedimientos declarados y/o implementados dentro de una clase u objeto y define un conjunto de acciones o comportamientos que serán ejecutados o invocados, se encargan de encapsular la funcionalidad sobre los datos y atributos de un objeto.
+
+	Tipos de métodos: 
+	-Abstractos: Se definen en interfaces o clases abstractas y no tienen una implementación concreta en la 		clase que los declara. Las clases que implementan la interfaz, deben proporcionar una 				implementación para 	dichos métodos.
+	-Estáticos: 
+	-De acceso: Normalmente conocidos como Getters y Setters ayudan a la asignación y recopilación de los 			valores de los atributos de una instancia específica de la clase.
+	-Destructores: Los destructores son métodos encargados de liberar los espacios de memoria que utlizan los 		objetos creados durante la ejecución del programa, sin embargo, en java no hay destructores como 		tal, java utiliza un sistema de recolección de basura para administrar automáticamente la 			liberacion de recursos y eliminación de métodos no utilizados.
+	
+	
+
+Constructor: Es un método especial dentro de una clase que se encarga de inicializar objetos cuando se cree una instancia de la clase, los constructores tienen el mismo nombre que la clase y pueden aceptar parámetros para personalizar la inicialización del objeto.
+
+Palabras reservadas: 
+static
+this
+extends
+implements
+interface
+
+Encapsulamiento: Se refiere a la práctica de ocultar los detalles internos de un objeto y exponer solo una interfaz controlada para interactuar con él, de manera breve consisten en ocultar los detalles y mostrar solo lo necesario. Todo esto se logra a través de las palabras reservadas: 
+	Tipos de acceso: 
+	- Private: Se utiliza para aquellas clases, métodos, atributos, etc. a los cuales únicamente se pueden 			acceder a ellos desde la misma clase en la que son definidos.
+	- Protected: Se utiliza para aquellas clases, métodos, atributos, etc. a los cuales se pueden acceder desde 		la superclase en la que fueron definidos o las subclases que hayan heredado de la superclase donde 		fueron definidos.
+	- Public: Se utiliza para aquellas clases, métodos, atributos,etc. que pueden ser llamados desde cualquier 		parte del código, ya sea desde la misma clase, mismo paquete o desde clases externas al paquete en 		el que 	se encuentra la clase pública, es decir desde cualquier parte del programa. 
+
+Herencia: Permite que una clase derivada o subclase "herede" atributos y métodos de una clase base o superclase, esto con el fin de que una subclase aproveche y extienda la funcionalidad de una superclase sin tener que volver a escribir código (Reutilizamiento de Código).
+
+Polimorfismo: Permite que objetos de diferentes clases respondan a una misma invocación de método de manera diferente, es decir, objetos de distintas clases pueden realizar acciones similares pero adaptadas a su propio comportamiento específico.
+
+
+Lista encadenada
+Pila
+Cola
+Expresiones regulares
+
+Serializacion: Serialización es el proceso de convertir objetos a secuencias de bytes o datos que pueden ser almacenados en un archivo o transmitidos a través de una red.
+
+Deserialización: Es el proceso inverso a la serialización donde se toma una secuencia de bytes o datos y se reconstruye el objeto original en la memoria del programa.
+
+Enumeración: Es un tipo especial que define un conjunto de valores constantes o enumerados. Cada valor de una enumeración repreenta una opción o un elemento específico dentro de ese conjunto y tiene un nombre descriptivo asocido.
+
+Casting: Es una operación utilizada para convertir un valor de un tipo de dato en otro tipo de dato compatible, esto es necesario cuando se desea asignar o utilizar un valor en un contexto donde se espera un tipo diferente al original.
+	-Implícito: Ocurre cuando un valor de un tipo de datos es asignado a una variable de un tipo de datos más 		grande o que tiene una capacidad de representación más grande sin perder presición.
+	-Explícito: Se conoce también como casting forzado, es cuando el programador indica explícitamente que se 		desea convertir un valor de un tipo de datos a otro, en algunos casos puede causar la pérdida de 		información o presición.
+
+TAD
+null
+destructor
+Identificadores: 
+    private
+    public
+    protected
+    ...
+registro/estructura
+JavaDoc
+Sobre carga de métodos
+Función
+argumento
+Parámetro
+operador terneario
+for each
+rule switch
+if 
+rule switch
+intance of
+casteo
+Árbol binario
+Tipos primitivos de Java
+Object 
+Atributos de Clase
+Atributos de Objeto/instancia
+Try/Catch/finally
+Genericos
+excepciones
+Clases anónimas
+Iterable, Iterator
+
+****Flata comentar***
+JavaSwing
+
